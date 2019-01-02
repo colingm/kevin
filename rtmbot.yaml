@@ -1,0 +1,5 @@
+CHANNELS:
+DEBUG: true
+SLACK_TOKEN:
+QUOTES: mad_max
+QUOTE_RATE: 2

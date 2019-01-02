@@ -1,0 +1,18 @@
+version: '2'
+services:
+  rtmbot:
+    build: .
+    volumes:
+    - .:/usr/src/app
+    depends_on:
+    - mongo
+  mongodata:
+    image: mongo:3.3
+    volumes:
+    - ./mongodb:/data/db
+    command: --storageEngine WiredTiger --break-mongo
+  mongo:
+    image: mongo:3.3
+    volumes_from:
+    - mongodata
+    command: --smallfiles --rest
