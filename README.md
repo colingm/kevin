@@ -1,8 +1,8 @@
-python-rtmbot
+Kevin
 =============
 A Slack bot written in python that connects via the RTM API.
 
-Python-rtmbot is a callback based bot engine. The plugins architecture should be familiar to anyone with knowledge to the [Slack API](https://api.slack.com) and Python. The configuration file format is YAML.
+Kevin is a callback based bot engine. The plugins architecture should be familiar to anyone with knowledge to the [Slack API](https://api.slack.com) and Python. The configuration file format is YAML.
 
 Some differences to webhooks:
 
@@ -21,15 +21,15 @@ Installation
 
 1. Download the python-rtmbot code
 
-        git clone git@github.com:slackhq/python-rtmbot.git
-        cd python-rtmbot
+        git clone git@github.com:slackhq/python-rtmbot.git kevin
+        cd kevin
 
 2. Install dependencies ([virtualenv](http://virtualenv.readthedocs.org/en/latest/) is recommended.)
 
         pip install -r requirements.txt
 
 3. Configure rtmbot (https://api.slack.com/bot-users)
-        
+
         cp doc/example-config/rtmbot.conf .
         vi rtmbot.conf
           SLACK_TOKEN: "xoxb-11111111111-222222222222222"
@@ -68,7 +68,7 @@ Plugins can send messages back to any channel, including direct messages. This i
 
     outputs = []
     outputs.append(["C12345667", "hello world"])
-        
+
 *Note*: you should always create the outputs array at the start of your program, i.e. ```outputs = []```
 
 ####Timed jobs
